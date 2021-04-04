@@ -160,7 +160,7 @@ $ nano filebeat-config.yml
 nano filebeat-playbook.yml
  ```
  
-[Filebeat Playbook File] (https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/filebeat-playbook.yml)
+[Filebeat Playbook File](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/filebeat-playbook.yml)
  
 8. Run the playbook 
  ```bash
@@ -176,7 +176,7 @@ nano metricbeat-config.yml
 # Creating the playbook 
 nano metricbeat-playbook.yml
 ```
-[Metricbeat Playbook File] (https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/metricbeat-playbook.yml)
+[Metricbeat Playbook File](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/metricbeat-playbook.yml)
 
 ```bash
 # Running the playbook
