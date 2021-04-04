@@ -61,12 +61,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-⋅⋅* Installing Docker image
-⋅⋅* Install python3-pip
-⋅⋅* Install docker via pip
-⋅⋅* Increasing virtual memory 
-⋅⋅* Downloading and launching a elk docker container 
-⋅⋅* Enabling docker service on boot
+ - _ Installing Docker image
+ - _ Install python3-pip
+ - _ Install docker via pip
+ - _ Increasing virtual memory 
+ - _ Downloading and launching a elk docker container 
+ - _ Enabling docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -77,14 +77,14 @@ This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 - 
 ##### THE DVWA Machines (web servers)
-⋅⋅* 10.1.0.4
-⋅⋅* 10.1.0.6
+ - _ 10.1.0.4
+ - _ 10.1.0.6
 
 
 We have installed the following Beats on these machines:
 
-⋅⋅* Filebeat 
-⋅⋅* Metricbeat
+ - _ Filebeat 
+ - _ Metricbeat
 
 Filebeat ships log files. You would expect to see logs like the ?
 Metricbeat ships system-level metrics. You would expect to see in the metric results ; container, cpu, diskio, healthcheck, image, info, memory and network.
@@ -151,12 +151,15 @@ edit the config file as needed $ nano filebeat-config.yml
       ```
     **SHOULD I INCLUDE THE PLAYBOOK?**
 
-# Creating the playbook
+7. Creating the playbook
+```bash
 nano filebeat-playbook.yml
-# Run the playbook 
+ ```
+8. Run the playbook 
+ ```bash
 ansible-playbook filebeat-playbook.yml
-
-# Installing MetricBeat
+   ```
+9. Installing MetricBeat
 
 ```bash 
 # Installing and editing the configuration file
