@@ -121,7 +121,8 @@ $ nano /etc/ansible/hosts
 ```bash
 nano /etc/ansible/install-elk.yml
 ```
-   [Elk Playbook](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/elk-server-playbook.yml)
+   [Elk Playbook File](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/elk-server-playbook.yml)
+   
 4. Run the playbook 
 ```bash 
 $ ansible-playbook install-elk.yml
@@ -155,6 +156,8 @@ edit the config file as needed $ nano filebeat-config.yml
 nano filebeat-playbook.yml
  ```
  
+[Filebeat Playbook File] (https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/filebeat-playbook.yml)
+ 
 8. Run the playbook 
  ```bash
 ansible-playbook filebeat-playbook.yml
@@ -168,6 +171,12 @@ curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/r
 nano metricbeat-config.yml
 # Creating the playbook 
 nano metricbeat-playbook.yml
+```
+[Metricbeat Playbook File] (https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/metricbeat-playbook.yml)
+
+```bash
 # Running the playbook
 ansible-playbook metricbeat-playbook.yml
 ```
+
+
