@@ -119,9 +119,15 @@ $ nano /etc/ansible/hosts
 		10.2.0.5 ansible_python_interpreter=/usr/bin/python3
 		```
 
-2. create a new playbook nano /etc/ansible/install-elk.yml
-3. Run the playbook $ ansible-playbook install-elk.yml
-4. creating playbooks to install filebeat and metricbeat on the web server vms
+2. creating the playbook 
+```bash
+nano /etc/ansible/install-elk.yml
+```
+4. Run the playbook 
+```bash 
+$ ansible-playbook install-elk.yml
+```
+6. creating playbooks to install filebeat and metricbeat on the web server vms
 
 Download and copy the Filebeat configuration files to the /etc/ansible directory
 $ curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
@@ -145,17 +151,20 @@ edit the config file as needed $ nano filebeat-config.yml
       ```
     **SHOULD I INCLUDE THE PLAYBOOK?**
 
-    Creating the playbook nano filebeat-playbook.yml
-    Run it ansible-playbook filebeat-playbook.yml
+# Creating the playbook
+nano filebeat-playbook.yml
+# Run the playbook 
+ansible-playbook filebeat-playbook.yml
 
-    Installing Creating playbook for metric beat
+# Installing MetricBeat
 
-Install and edit the config file 
-
+```bash 
+# Installing and editing the configuration file
 curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > metricbeat-config.yml
-
+# Making changes to the configuration file
 nano metricbeat-config.yml
-creating the playbook
+# Creating the playbook 
 nano metricbeat-playbook.yml
-running the playbook
+# Running the playbook
 ansible-playbook metricbeat-playbook.yml
+```
