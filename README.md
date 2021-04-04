@@ -127,13 +127,17 @@ nano /etc/ansible/install-elk.yml
 ```bash 
 $ ansible-playbook install-elk.yml
 ```
-6. creating playbooks to install filebeat and metricbeat on the web server vms
+6. Creating playbooks to install Filebeat and Metricbeat on the web servers
 
-Download and copy the Filebeat configuration files to the /etc/ansible directory
+7. Download and copy the Filebeat configuration files to the /etc/ansible directory
+```bash
 $ curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
-
-edit the config file as needed $ nano filebeat-config.yml
-
+```
+8. Edit the configuration file as needed with the correct IPs
+```bash 
+$ nano filebeat-config.yml
+```
+```bash
     - Scroll to line #1106 and replace the IP address with the IP address of the ELK machine.
 
       ```bash
