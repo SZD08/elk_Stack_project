@@ -121,6 +121,7 @@ $ nano /etc/ansible/hosts
 ```bash
 nano /etc/ansible/install-elk.yml
 ```
+   [Elk Playbook](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/elk-server-playbook.yml)
 4. Run the playbook 
 ```bash 
 $ ansible-playbook install-elk.yml
@@ -153,6 +154,7 @@ edit the config file as needed $ nano filebeat-config.yml
 ```bash
 nano filebeat-playbook.yml
  ```
+ 
 8. Run the playbook 
  ```bash
 ansible-playbook filebeat-playbook.yml
