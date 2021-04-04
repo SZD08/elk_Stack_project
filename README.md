@@ -61,12 +61,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
- - _ Installing Docker image
- - _ Install python3-pip
- - _ Install docker via pip
- - _ Increasing virtual memory 
- - _ Downloading and launching a elk docker container 
- - _ Enabling docker service on boot
+ - Installing Docker image
+ - Install python3-pip
+ - Install docker via pip
+ - Increasing virtual memory 
+ - Downloading and launching a elk docker container 
+ - Enabling docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -77,14 +77,14 @@ This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 - 
 ##### THE DVWA Machines (web servers)
- - _ 10.1.0.4
- - _ 10.1.0.6
+ - 10.1.0.4
+ - 10.1.0.6
 
 
 We have installed the following Beats on these machines:
 
- - _ Filebeat 
- - _ Metricbeat
+ - Filebeat 
+ - Metricbeat
 
 Filebeat ships log files. You would expect to see logs like the ?
 Metricbeat ships system-level metrics. You would expect to see in the metric results ; container, cpu, diskio, healthcheck, image, info, memory and network.
@@ -97,10 +97,8 @@ SSH into the control node and follow the steps below:
 - Copy the configuration file to /etc/ansible.
 - Update the hosts file to include the web server machines and the elk machine.
 - Run the playbook, and navigate to Elk server VM to check that the installation worked as expected.
-http://[Public-IP]:5601/app/kibana#/home
-
-In my case:
-http://40.91.97.85:5601/app/kibana#/home
+  - http://[Public-IP]:5601/app/kibana#/home
+  - In my case: http://40.91.97.85:5601/app/kibana#/home
 
 ### Commands to deploy the ELK server
 
