@@ -34,7 +34,7 @@ The configuration details of each machine may be found below.
 | Web-1           | Web server        | 10.1.0.4   | Linux            |
 | Web-2           | Web server        | 10.1.0.6   | Linux            |
 | Web-3           | Web server        | 10.1.0.7   | Linux            |
-| Elk-Server      | Monitoring    ADD IP PUBLIC    | 10.2.0.5   | Linux            |
+| Elk-Server      | Monitoring        | 10.2.0.5   | Linux            |
 
 ### Access Policies
 
