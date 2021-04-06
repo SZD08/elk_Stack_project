@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 [Elk_Stack_Diagram](https://github.com/SZD08/elk_Stack_project/blob/main/Diagrams/Elk-STACK-diagram.JPG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the [Elk-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/elk-server-playbook.yml), [Filebeat-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/filebeat-playbook.yml) and [Metricbeat-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/metricbeat-playbook.yml) files may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selecting portions of the [Elk-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/elk-server-playbook.yml), [Filebeat-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/filebeat-playbook.yml) and [Metricbeat-playbook.yml](https://github.com/SZD08/elk_Stack_project/blob/main/Scripts/Ansible/metricbeat-playbook.yml) files may be used to install only certain pieces of it, such as Filebeat.
 
 
 This document contains the following details:
