@@ -35,7 +35,7 @@ The configuration details of each machine may be found below.
 | Web-1           | Web server        | 10.1.0.4   | Linux            |
 | Web-2           | Web server        | 10.1.0.6   | Linux            |
 | Web-3           | Web server        | 10.1.0.7   | Linux            |
-| Elk-Server      | Monitoring        | 10.2.0.5   | Linux            |
+| Elk-Server      | Monitoring    ADD IP PUBLIC    | 10.2.0.5   | Linux            |
 
 ### Access Policies
 
@@ -57,7 +57,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it saves time and it prevents human errors.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it automates processes and prevents human errors.
 
 The playbook implements the following tasks:
 
@@ -74,7 +74,6 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
 - 
 ##### THE DVWA Machines (web servers)
  - 10.1.0.4
@@ -86,7 +85,7 @@ We have installed the following Beats on these machines:
  - Filebeat 
  - Metricbeat
 
-Filebeat ships log files. You would expect to see logs like the ?
+Filebeat ships log files. You would expect to see logs like failed logins, user incorrect password. 
 Metricbeat ships system-level metrics. You would expect to see in the metric results ; container, cpu, diskio, healthcheck, image, info, memory and network.
 
 ### Using the Playbook
@@ -153,7 +152,6 @@ $ nano filebeat-config.yml
       setup.kibana:
       host: "10.2.0.5:5601"
       ```
-    **SHOULD I INCLUDE THE PLAYBOOK?**
 
 7. Creating the playbook
 ```bash
